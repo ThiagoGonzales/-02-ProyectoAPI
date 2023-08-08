@@ -62,11 +62,11 @@ def juegos(Año: str):
 def specs(Año: str):
     return obtener_top_specs(Año)
 
-@app.get('/early_access/{Año}')
+@app.get('/early_access')
 def early_access(Año: str):
     return obtener_suma_early_access(Año)
 
-@app.get('/sentiment/{Año}')
+@app.get('/sentiment')
 def sentiment(Año: str):
     return obtener_sentiment(Año)
 

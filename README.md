@@ -17,10 +17,11 @@
 ## EDA 
 
 - Para lograr el objetivo de predecir el precio de un juego tomé en cuentas las columnas `genres`, `early_access` y `price`, descartando a las demás para que el dataframe queda así.
+
 |genres                                       |price|early_access|
 |---------------------------------------------|-----|------------|
 |[Action, Casual, Indie, Simulation, Strategy]|4.99 |False       |
-|[Action, Adventure, Casual]	              |0.99 |False       |
+|[Action, Adventure, Casual]	                 |0.99 |False       |
 |[Action, Adventure, Simulation]              |3.99 |False       |
 |[Free to Play, Indie, Simulation, Sports]    |9.99 |False       |
 |[Free to Play, Indie, Simulation, Sports]    |18.99|False       |

@@ -2,7 +2,7 @@ import pandas as pd
 
 #------Lectura------
 
-df = pd.read_json(r'datos\\steam_games2.json')
+df = pd.read_json('steam_games2.json')
 
 #------Limpieza------
 

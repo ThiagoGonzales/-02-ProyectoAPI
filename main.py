@@ -64,7 +64,9 @@ def specs(Año: str):
 
 @app.get('/early_access')
 def early_access(Año: str):
-    return obtener_suma_early_access(Año)
+    df_año = df[df['release_date'].dt.year == Año]
+    suma = df_año['early_access'].sum()
+    return suma
 
 @app.get('/sentiment')
 def sentiment(Año: str):

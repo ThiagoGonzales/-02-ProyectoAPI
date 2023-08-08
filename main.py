@@ -3,7 +3,7 @@ import pandas as pd
 
 #------Lectura------
 
-df = pd.read_json('steam_games2.json')
+df = pd.read_json('steam_games2.json', unicode='UTF-8')
 
 #------Limpieza------
 

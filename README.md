@@ -17,7 +17,7 @@
 [tabla]
 
 - Con estos datos luego cree un grafico del promedio de los precios de los juegos separados por los generos 
-![graph](https://i.imgur.com/rD2mbZH.png)
+![graph](https://i.imgur.com/HuxRrVU.png)
 
  aquí vemos que los productos de `Animation & modeling`, `Video Production` y `Educatión`  son los más costosos, mientras que los precios de juegos con generos de `Action`, `Indie` y `Casual` son los más baratos
 

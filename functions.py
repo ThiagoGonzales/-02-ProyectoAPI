@@ -16,11 +16,13 @@ def filtrar_año(Año):
 #------API------
 
 def obtener_top_genero(Año):
-    df_año = filtrar_año(Año)
-    df_año = df_año.dropna(subset=['genres'])
-    genres = [spec for sublist in df_año['genres'] for spec in sublist]
-    top_5 = pd.Series(genres).value_counts().head(5).to_dict()
-    return top_5
+    df_filtered = df[df['release_date'].dt.year == int(Año)]
+    df_filtered = df_filtered.dropna(subset=['genres'])
+    df_filtered['genres'] = df_filtered['genres'].apply(ast.literal_eval)
+    all_genres = [genre for sublist in df_filtered['genres'] for genre in sublist]
+    genre_counts = pd.Series(all_genres).value_counts()
+    top_genres_dict = genre_counts.head(5).to_dict()
+    return top_genres_dict
 
 def obtener_top_specs(Año):
     df_año = filtrar_año(Año)

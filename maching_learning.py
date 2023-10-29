@@ -32,7 +32,7 @@ df_exploded = df_ml.explode('genres')
 # Crear columnas dummy
 df_dummies = pd.get_dummies(df_exploded['genres'])
 
-# Agregar la columna 'price' y 'ACCESO_ANTISIPADO' al DataFrame df_dummies
+# Agregar la columna 'price' y 'ACCESO_ANTICIPADO' al DataFrame df_dummies
 df_dummies['price'] = df_exploded['price']
 df_dummies['early_access'] = df_exploded['early_access']
 
